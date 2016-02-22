@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="UTM Avo.ttf">
+            <string>UTM-Avo</string>
+        </mutableArray>
+        <mutableArray key="iciel Cadena.ttf">
+            <string>iCielCadena</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8SJ-JN-byv">
+                                <rect key="frame" x="121" y="227" width="133" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8SJ-JN-byv" secondAttribute="height" multiplier="1:1" id="jpg-SP-rAc"/>
+                                </constraints>
+                                <state key="normal" image="voice_contest"/>
+                                <connections>
+                                    <action selector="speakTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VsV-w1-gBK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beautiful" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1sD-XE-p77">
+                                <rect key="frame" x="109" y="414" width="158" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="oD3-k4-zsH">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustSize" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="iCielCadena" family="iCiel Cadena" pointSize="40"/>
+                                <color key="textColor" red="0.1019607843" green="0.61176470589999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustSize" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/'bju:təful/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sws-k3-K78">
+                                <rect key="frame" x="151" y="469" width="74" height="19"/>
+                                <fontDescription key="fontDescription" name="UTM-Avo" family="UTM Avo" pointSize="16.149999618530273"/>
+                                <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustSize" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-KD-dR6">
+                                <rect key="frame" x="78" y="184" width="220" height="220"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="9N3-VJ-8vf"/>
+                                    <constraint firstAttribute="width" constant="220" id="REg-fr-CVd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8SJ-JN-byv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="30K-Cp-ISk"/>
+                            <constraint firstItem="Bga-KD-dR6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7tW-GX-g9c"/>
+                            <constraint firstItem="8SJ-JN-byv" firstAttribute="centerX" secondItem="Bga-KD-dR6" secondAttribute="centerX" id="Q4d-mq-kzL"/>
+                            <constraint firstItem="Bga-KD-dR6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="ROf-OO-aRw"/>
+                            <constraint firstItem="Sws-k3-K78" firstAttribute="top" secondItem="1sD-XE-p77" secondAttribute="bottom" constant="10" id="XmF-4n-kDG"/>
+                            <constraint firstItem="1sD-XE-p77" firstAttribute="top" secondItem="Bga-KD-dR6" secondAttribute="bottom" constant="10" id="aTF-e9-Agz"/>
+                            <constraint firstItem="8SJ-JN-byv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aa7-Qy-iFu"/>
+                            <constraint firstItem="1sD-XE-p77" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cj3-0c-Hfz"/>
+                            <constraint firstItem="8SJ-JN-byv" firstAttribute="centerY" secondItem="Bga-KD-dR6" secondAttribute="centerY" id="fXG-IN-Kv1"/>
+                            <constraint firstItem="Sws-k3-K78" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tSX-hQ-oyv"/>
+                            <constraint firstItem="8SJ-JN-byv" firstAttribute="height" secondItem="Bga-KD-dR6" secondAttribute="height" multiplier="44:73" id="uHr-Rt-BhK"/>
+                            <constraint firstItem="8SJ-JN-byv" firstAttribute="width" secondItem="Bga-KD-dR6" secondAttribute="width" multiplier="44:73" id="zvb-VH-1Px"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Q4d-mq-kzL"/>
+                                <exclude reference="fXG-IN-Kv1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="animationImageView" destination="Bga-KD-dR6" id="1SL-R2-5KL"/>
+                        <outlet property="speakButton" destination="8SJ-JN-byv" id="PrM-Gh-oiS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="voice_contest" width="133" height="133"/>
+    </resources>
+</document>
